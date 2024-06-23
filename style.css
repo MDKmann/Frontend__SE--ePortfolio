@@ -1,0 +1,77 @@
+/*=============================================
+=   START SIDE WIDE DEFAULT FORMATTING    =
+=============================================*/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+  margin: 0 auto;
+}
+
+/* Background color for whole web page */
+section {
+  background-color: rgb(245, 245, 245);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+/*=====  End of SIDE WIDE DEFAULT FORMATTING  ======*/
+/*=============================================
+=            Start of HERO PAGE        =
+=============================================*/
+
+/* #landing-page {     ADDED TAILWIND CSS AND RELABELED AS HERO SECTION
+  min-height: 100vh;
+} */
+
+/*=====  End of HERO PAGE ======*/
+
+/*=============================================
+=            Start of NAV BAR         =
+=============================================*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100px;
+}
+
+#personal-logo {
+  height: 50px;
+  width: 50px;
+}
+
+.nav__link--list {
+  display: flex;
+}
+
+.nav__link {
+  margin: 0 12px;
+}
+
+.nav__link--anchor {
+  text-decoration: none;
+  font-size: 16px;
+  color: #242424;
+  font-weight: 700;
+}
+
+.fa-adjust {
+  font-size: 20px;
+}
