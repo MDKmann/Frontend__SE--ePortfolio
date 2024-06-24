@@ -16,9 +16,9 @@ html {
 }
 
 /* Background color for whole web page */
-section {
+/* section { ADDED TAILWIND CSS
   background-color: rgb(245, 245, 245);
-}
+} */
 
 img {
   display: block;
@@ -42,7 +42,7 @@ li {
 /*=============================================
 =            Start of NAV BAR         =
 =============================================*/
-nav {
+/* nav {            ADDED TAILWIND CSS
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -50,12 +50,12 @@ nav {
   max-width: 1200px;
   margin: 0 auto;
   height: 100px;
-}
+} */
 
-#personal-logo {
+/* #personal-logo {         ADDED TAILWIND CSS
   height: 50px;
   width: 50px;
-}
+} */
 
 .nav__link--list {
   display: flex;
