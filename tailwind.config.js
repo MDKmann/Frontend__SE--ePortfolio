@@ -1,1 +1,1 @@
-// Tailwind CSS plugin file
+// Tailwind CSS plugin activation file --> ignore file
