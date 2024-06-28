@@ -33,6 +33,22 @@ p {
 li {
   list-style-type: none;
 }
+/* .click {
+  transition: all 300ms ease;
+}
+
+.click:hover {
+  transform: scale(1.1);
+
+}
+
+.click:active {
+  transform: scale(0.8);
+} */
+
+/* TAILWIND FOR ABOVE */
+/* hover:scale-[1.1] active:scale-0.8] ease-in-out
+
 /*=====  End of SIDE WIDE DEFAULT FORMATTING  ======*/
 /*=============================================
 =            Start of HERO PAGE        =
