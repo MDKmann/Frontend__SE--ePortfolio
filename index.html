@@ -14,11 +14,14 @@
     ></script>
   </head>
   <body class="bg-stone-100">
-    <section id="hero-section" class="min-h-screen">
+   <!-- HERO SECTION -->
+    <section id="hero" class="h-dvh">
+      <!-- NAV SECTION -->
       <nav
-        class=" flex justify-between items-center w-full max-w-[1200px] my-0 px-5 mx-auto h-[100px]"
+        class="flex justify-between items-center w-full max-w-[1200px] my-0 px-5 mx-auto h-[100px]"
       >
         <figure>
+          <!-- NAV LOGO -->
           <img
             id="personal-logo"
             src="./assets/MK grayscale icon.svg"
@@ -26,25 +29,26 @@
             class="hover:sepia [64px] h-[64px]"
           />
         </figure>
+        <!-- NAV MENU -->
         <ul class="flex items-center">
-          <li class="my-0 mx-3">
+          <li class="mx-3 my-0">
             <a
               href="#"
-              class="hover:text-blue-400 duration-300 ease-in-out no-underline text-base text-[#242424] font-bold"
+              class="invisible md:visible hover:text-blue-400 duration-300 ease-in-out no-underline text-[16px] text-[#242424] font-bold"
               >About</a
             >
           </li>
-          <li class="my-0 mx-3">
+          <li class="mx-3 my-0">
             <a
               href="#"
-              class="hover:text-blue-400 duration-300 ease-in-out no-underline text-base text-[#242424] font-bold"
+              class="hover:text-blue-400 duration-300 ease-in-out no-underline text-[16px] text-[#242424] font-bold"
               >Projects</a
             >
           </li>
-          <li class="my-0 mx-3">
+          <li class="mx-3 my-0">
             <a
               href="#"
-              class="hover:text-blue-400 duration-300 ease-in-out no-underline text-base text-[#242424] font-bold"
+              class="hover:text-blue-400 duration-300 ease-in-out no-underline text-[16px] text-[#242424] font-bold"
               >Contact</a
             >
           </li>
@@ -52,7 +56,7 @@
             <a
               href="#"
               class="no-underline text-base text-[#242424] font-bold"
-              ><i class="fas fa-adjust text-xl"></i
+              ><i class="text-base fas fa-adjust"></i
             ></a>
           </li>
         </ul>
@@ -60,48 +64,51 @@
       <header
         class="header absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 w-full max-w-[1000px] px-[30px]"
       >
+        <!-- HERO MAIN CONTENT -->
         <div class="header__content">
-          <h1 class="title text-[120px]/none font-bold">Hey</h1>
-          <h1 class="title text-[120px]/none font-bold text-blue-400">I'm Michael.</h1>
-          <p class="header__para text-[24px]/loose max-w-[450px]">
+          <h1 class="title text-[52px]/none font-bold mb-2">Hey</h1>
+          <h1 class="title text-[52px]/none font-bold text-blue-400 mb-4">I'm Michael.</h1>
+          <p class="header__para text-[18px]/loose max-w-[450px]">
             I'm a <b class="text-blue-400">Frontend Software Engineer</b> with a
             strong passion for building web applications with great user
             experiences.
-            <br />
+            <br/>
             Here's a bit more <b class="text-blue-400">about me.</b>
           </p>
+          <!-- HERO ICON LINKS -->
           <ul class="flex my-4">
             <li class="bg-blue-400 my-0 mr-3 rounded-full hover:scale-[1.1] active:scale-[0.8] duration-300 ease-in-out">
               <a
                 href="https://www.linkedin.com/in/michael-kuhlmann-73127771"
                 target=_"blank"
-                class="no-underline text-base flex justify-center items-center w-8 h-8 text-stone-100"
-                ><i class="fab fa-linkedin-in text-xl"></i
-              ></a>
+                class="flex items-center justify-center w-8 h-8 text-base no-underline text-stone-100"
+                ><i class="text-xl fab fa-linkedin-in"></i></a>
             </li>
             <li class="bg-blue-400 my-0 mx-3 rounded-full hover:scale-[1.1] active:scale-[0.8] duration-300 ease-in-out">
               <a
                 href="https://github.com/MDKmann"
                 target=_"blank"
-                class="no-underline text-base flex justify-center items-center w-8 h-8 text-stone-100"
-                ><i class="fab fa-github text-xl"></i
+                class="flex items-center justify-center w-8 h-8 text-base no-underline text-stone-100"
+                ><i class="text-xl fab fa-github"></i
               ></a>
             </li>
             <li class="bg-blue-400 my-0 mx-3 rounded-full hover:scale-[1.1] active:scale-[0.8] duration-300 ease-in-out">
               <a
                 href="#"
                 target=_"blank"
-                class="no-underline text-base flex justify-center items-center w-8 h-8 text-stone-100"
-                ><i class="far fa-file-pdf text-xl"></i
+                class="flex items-center justify-center w-8 h-8 text-base no-underline text-stone-100"
+                ><i class="text-xl far fa-file-pdf"></i
               ></a>
             </li>
           </ul>
         </div>
       </header>
+      <!-- MAIL CONTACT STICKY BUTTON -->
       <button class="absolute bottom-[32px] right-[40px] w-[70px] h-[70px] text-[32px] rounded-full bg-[#242424] hover:scale-[1.1] active:scale-[0.8] duration-300 ease-in-out">
         <i class="fas fa-envelope text-stone-100"></i>
       </button>
-      <a href="#projects" class="scroll absolute bottom-[20px] left-2/4 -translate-x-2/4 w-[20px] h-[30px] border-2 border-[#242424] rounded-3xl <!-- after:w-[4px] after:h-[6px] after:bg-[#242424] after:border-2 -->"></a>
+      <!-- SCROLL MOUSE ICON -->
+      <a href="#projects" class="scroll flex justify-center items-center absolute bottom-[20px] left-2/4 -translate-x-2/4 w-[20px] h-[30px] border-2 border-[#242424] rounded-3xl hover:scale-[1.1] active:scale-[0.8] duration-300 ease-in-out"> <span class="w-[4px] h-[6px] bg-[#242424] border-3 rounded-full animate-bounce"></span> </a>
     </section>
   </body>
 </html>
