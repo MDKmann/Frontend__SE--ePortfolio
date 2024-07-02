@@ -96,3 +96,48 @@ li {
 /* .fa-adjust {         ADDED TAILWIND CSS
   font-size: 20px;
 } */
+
+
+/*=============================================
+=            PROJECTS SECTION                 =
+=============================================*/
+
+
+.project__wrapper {
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.45);
+  overflow: hidden;
+}
+
+.project__wrapper:hover .project__img {
+  transform: scale(1.07);
+  filter: blur(5px);
+}
+
+.project__img {
+  width: 100%;
+  transition: all 600ms ease;
+}
+
+.project__wrapper:hover .project__wrapper--bg {
+  opacity: 0.7;
+  visibility: visible;
+}
+
+.project__wrapper--bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1c1d25;
+  opacity: 0;
+  transition: all 450ms ease;
+  visibility: hidden;
+}
+
+.project__wrapper:hover .project__description {
+  opacity: 1;
+  transform: translateY(-50%);
+}
