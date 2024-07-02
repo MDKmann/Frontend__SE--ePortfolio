@@ -111,7 +111,7 @@
         </div>
       </header>
       <!-- MAIL CONTACT STICKY BUTTON -->
-      <button class="absolute bottom-[32px] right-[40px] w-[70px] h-[70px] text-[32px] rounded-full bg-[#242424] hover:scale-[1.1] active:scale-[0.8] duration-300 ease-in-out">
+      <button class="fixed bottom-[32px] right-[40px] w-[70px] h-[70px] text-[32px] rounded-full bg-[#242424] hover:scale-[1.1] active:scale-[0.8] duration-300 ease-in-out z-10">
         <i class="fas fa-envelope text-stone-100"></i>
       </button>
       <!-- SCROLL MOUSE ICON -->
@@ -128,30 +128,30 @@
           </h1>
           <ul class="project___list">
             <!-- PROJECT #1 -->
-            <li class="project">
-               <!-- TODO -- TAILWIND NOT CONVERTING -->
-              <div class="relative project__wrapper overflow-hidden rounded-[20px] shadow-[0_20px_80px_0_rgba(0,0,0,0.45)] group">
-                <img src="./assets/blinker mockup.png" alt="website mockup #1">
-                 <!-- TODO -- TAILWIND NOT CONVERTING -->
+            <li class="project mb-[135px]">
+               <!-- PROJECT BACKGROUND -->
+              <div class="relative project__wrapper overflow-hidden max-[480px]:flex max-[480px]:justify-center rounded-[20px] shadow-[0_20px_80px_0_rgba(0,0,0,0.45)] group">
+                <img class="group-hover:scale-[1.07] group-hover:blur-[5px] transition-all duration-[600ms] ease" src="./assets/blinker mockup.png" alt="website mockup #1">
+                 <!-- PROJECT WRAPPER--BG -->
                 <div class="project__wrapper--bg group-hover:bg-[#1c1d25]/[0.7] absolute top-0 left-0 w-full h-full">
                 </div>
-                <!-- TODO -- TAILWIND NOT CONVERTING -->
-                <div class=" project__description absolute top-2/4 left-[90px] max-w-[550px] 
+                <!-- PROJECT DESCRIPTION -->
+                <div class="max-[480px]:text-center project__description absolute top-2/4 min-[480px]:left-[90px] max-w-[550px] 
                 text-white translate-y-full opacity-0 [transition:opacity_300ms,transform_450ms_ease-in-out] group-hover:-translate-y-2/4 group-hover:opacity-100">
                   <!-- PROJECT #1 TITLE -->
-                  <h3 class="project__description--title text-[40px]">
+                  <h3 class="project__description--title text-[32px] min-[425px]:text-[40px]">
                     <b>Car Sales Projects</b>
                   </h3>
                   <!-- PROJECT #1 TECH STACK -->
-                  <h4 class="project__description--sub-title mt-[16px]">
+                  <h4 class="project__description--sub-title mt-[16px] max-[480px]:my-[8px] max-[480px]:mt-0">
                     <b>HTML, CSS, JavaScript, Vue, Vuex</b>
                   </h4>
                   <!-- PROJECT #1 PARA -->
-                  <p class="project__description--para my-[16px]">
+                  <p class="project__description--para my-[16px] max-[480px]:hidden">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum saepe dicta molestias est culpa veniam consectetur magni at magnam totam.
                   </p>
                   <!-- PROJECT #1 LINKS -->
-                  <div class="flex project__description--links">
+                  <div class="flex max-[480px]:justify-center project__description--links">
                     <!-- GITHUB ICON LINK -->
                     <a
                       href="https://github.com/MDKmann"
@@ -170,9 +170,119 @@
                 </div>
               </div>
             </li>
+            <li class="project mb-[135px]">
+               <!-- PROJECT BACKGROUND -->
+              <div class="relative project__wrapper overflow-hidden max-[480px]:flex max-[480px]:justify-center rounded-[20px] shadow-[0_20px_80px_0_rgba(0,0,0,0.45)] group">
+                <img class="group-hover:scale-[1.07] group-hover:blur-[5px] transition-all duration-[600ms] ease" src="./assets/blinker mockup.png" alt="website mockup #1">
+                 <!-- PROJECT WRAPPER--BG -->
+                <div class="project__wrapper--bg group-hover:bg-[#1c1d25]/[0.7] absolute top-0 left-0 w-full h-full">
+                </div>
+                <!-- PROJECT DESCRIPTION -->
+                <div class="max-[480px]:text-center project__description absolute top-2/4 min-[480px]:left-[90px] max-w-[550px] 
+                text-white translate-y-full opacity-0 [transition:opacity_300ms,transform_450ms_ease-in-out] group-hover:-translate-y-2/4 group-hover:opacity-100">
+                  <!-- PROJECT #1 TITLE -->
+                  <h3 class="project__description--title text-[40px]">
+                    <b>Car Sales Projects</b>
+                  </h3>
+                  <!-- PROJECT #1 TECH STACK -->
+                  <h4 class="project__description--sub-title mt-[16px] max-[480px]:my-[8px] max-[480px]:mt-0">
+                    <b>HTML, CSS, JavaScript, Vue, Vuex</b>
+                  </h4>
+                  <!-- PROJECT #1 PARA -->
+                  <p class="project__description--para my-[16px] max-[480px]:hidden">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum saepe dicta molestias est culpa veniam consectetur magni at magnam totam.
+                  </p>
+                  <!-- PROJECT #1 LINKS -->
+                  <div class="flex max-[480px]:justify-center project__description--links">
+                    <!-- GITHUB ICON LINK -->
+                    <a
+                      href="https://github.com/MDKmann"
+                      target=_"blank"
+                      class="flex items-center justify-center text-base no-underline h-7 w-7 text-stone-100 bg-blue-400 my-0 mr-3 rounded-full hover:scale-[1.1] active:scale-[0.8] duration-300 ease-in-out">
+                      <i class="text-base fab fa-github"></i>
+                    </a>
+                    <!-- WEBLINK ICON LINK -->
+                    <a
+                      href="https://github.com/MDKmann"
+                      target=_"blank"
+                      class="flex items-center justify-center text-base no-underline h-7 w-7 text-stone-100 bg-blue-400 my-0 mr-3 rounded-full hover:scale-[1.1] active:scale-[0.8] duration-300 ease-in-out">
+                      <i class="text-sm fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project mb-[135px]">
+               <!-- PROJECT BACKGROUND -->
+              <div class="relative project__wrapper overflow-hidden max-[480px]:flex max-[480px]:justify-center rounded-[20px] shadow-[0_20px_80px_0_rgba(0,0,0,0.45)] group">
+                <img class="group-hover:scale-[1.07] group-hover:blur-[5px] transition-all duration-[600ms] ease" src="./assets/blinker mockup.png" alt="website mockup #1">
+                 <!-- PROJECT WRAPPER--BG -->
+                <div class="project__wrapper--bg group-hover:bg-[#1c1d25]/[0.7] absolute top-0 left-0 w-full h-full">
+                </div>
+                <!-- PROJECT DESCRIPTION -->
+                <div class="max-[480px]:text-center project__description absolute top-2/4 min-[480px]:left-[90px] max-w-[550px] 
+                text-white translate-y-full opacity-0 [transition:opacity_300ms,transform_450ms_ease-in-out] group-hover:-translate-y-2/4 group-hover:opacity-100">
+                  <!-- PROJECT #1 TITLE -->
+                  <h3 class="project__description--title text-[40px]">
+                    <b>Car Sales Projects</b>
+                  </h3>
+                  <!-- PROJECT #1 TECH STACK -->
+                  <h4 class="project__description--sub-title mt-[16px] max-[480px]:my-[8px] max-[480px]:mt-0">
+                    <b>HTML, CSS, JavaScript, Vue, Vuex</b>
+                  </h4>
+                  <!-- PROJECT #1 PARA -->
+                  <p class="project__description--para my-[16px] max-[480px]:hidden">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum saepe dicta molestias est culpa veniam consectetur magni at magnam totam.
+                  </p>
+                  <!-- PROJECT #1 LINKS -->
+                  <div class="flex max-[480px]:justify-center project__description--links">
+                    <!-- GITHUB ICON LINK -->
+                    <a
+                      href="https://github.com/MDKmann"
+                      target=_"blank"
+                      class="flex items-center justify-center text-base no-underline h-7 w-7 text-stone-100 bg-blue-400 my-0 mr-3 rounded-full hover:scale-[1.1] active:scale-[0.8] duration-300 ease-in-out">
+                      <i class="text-base fab fa-github"></i>
+                    </a>
+                    <!-- WEBLINK ICON LINK -->
+                    <a
+                      href="https://github.com/MDKmann"
+                      target=_"blank"
+                      class="flex items-center justify-center text-base no-underline h-7 w-7 text-stone-100 bg-blue-400 my-0 mr-3 rounded-full hover:scale-[1.1] active:scale-[0.8] duration-300 ease-in-out">
+                      <i class="text-sm fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
           </ul>          
         </div>
       </div>
      </section>
+     <footer class="relative bg-[#242424] py-[6%] px-0">
+        <div class="container flex justify-center">
+          <a href="" class="footer__anchor">
+            <figure class="footer__logo">
+              <img src="./assets/MK grayscale icon.svg" alt="MK footer logo"
+              class="hover:sepia [64px] h-[64px]"
+              >
+            </figure>
+            <!-- TODO BELOW -->
+            <!-- <span class="absolute right-0 footer__logo--popper top-[16px] transition-all duration-300 ease text-white">
+              " TOP "
+              <i class="fas fa-arrow-up"></i>
+            </span>
+          </a>
+          <div class="footer__social--list">
+            <a href="#"
+            class="text-white no-underline hover:relative"
+            >
+              GitHub
+              <div class="hover:block absolute left-0 hidden w-full bg-white -bottom-[3px] h-[3px] right-0 transition-all duration-300 ease"></div>
+            </a>
+          </div>
+          <div class="footer__copyright"></div> -->
+        </div>
+     </footer>
   </body>
 </html>
