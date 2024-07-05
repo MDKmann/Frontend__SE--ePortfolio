@@ -116,7 +116,44 @@
       </button>
       <!-- SCROLL MOUSE ICON -->
       <a href="#projects" class="scroll flex justify-center items-center absolute bottom-[20px] left-2/4 -translate-x-2/4 w-[20px] h-[30px] border-2 border-[#242424] rounded-3xl hover:scale-[1.1] active:scale-[0.8] duration-300 ease-in-out"> <span class="w-[4px] h-[6px] bg-[#242424] border-3 rounded-full animate-[bounce_1s_infinite_alternate-reverse]"></span> </a>
-      
+      <!-- MODAL CONTACT PAGE -->
+       <div class="absolute modal top-2/4 left-2/4 w-[90%] max-w-[1100px] h-[700px] rounded-[20px] shadow-[0_20px_80px_0_rgba(0,0,0,0.55)] overflow-hidden -translate-x-2/4 -translate-y-2/4 flex">
+        <!-- WHHITE MODAL ABOUT PAGE -->
+        <div class="w-2/4 modal__half bg-stone-100 py-[40px] px-[72px] flex flex-col justify-center relative">
+          <h3 class="modal__title--about">
+            <b>Here's a bit about me.</b>
+          </h3>
+          <h4 class="modal__sub-title--about">
+            <b>Frontend Software Engineer.</b>
+          </h4>
+          <p class="modal__para--about">My name is <b class="text-blue-400">Michael</b> and I am an American  <b class="text-blue-400">frontend software engineer</b> with a compelling passion for developing websites with exceptional  <b class="text-blue-400">user experiences.</b>
+          <br>
+          Through my own self-drive, or the  <b class="text-blue-400">wisdom</b> and  <b class="text-blue-400">experience</b> of the talented team I work with, I am challenged daily with intimidating and complex engineering problems.
+          </p>
+          <div class="flex flex-wrap modal__languages">
+            <figure class=" modal__HTML relative p-[16px] flex flex-col items-center w-1/4 group">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="HTML logo" class="modal__language--HTML group-hover:scale-[0.85] group-hover:brightness-75 duration-300 ease-in-out">
+              <span class="absolute transition-all duration-300 ease-in-out scale-0 -bottom-[10px] modal__language--name group-hover:scale-100"><b>HTML</b></span>
+            </figure>
+            <figure class="modal__CSS relative p-[16px] flex flex-col items-center w-1/4 group">
+              <img src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="CSS logo" class="modal__language--CSS group-hover:scale-[0.85] group-hover:brightness-75 duration-300 ease-in-out">
+              <span class="absolute transition-all duration-300 ease-in-out scale-0 -bottom-[10px] modal__language--name group-hover:scale-100"><b>CSS</b></span>
+            </figure>
+            <figure class="modal__JS relative p-[16px] flex flex-col items-center w-1/4 group">
+              <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="JavaScript logo" class="modal__language--JS group-hover:scale-[0.85] group-hover:brightness-75 duration-300 ease-in-out">
+              <span class="absolute transition-all duration-300 ease-in-out scale-0 -bottom-[10px] modal__language--name group-hover:scale-100"><b>JavaScript</b></span>
+            </figure>
+            <figure class="modal__React relative p-[16px] flex flex-col items-center w-1/4 group">
+              <img src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt="React logo" class="modal__language--React group-hover:scale-[0.85] group-hover:brightness-75 duration-300 ease-in-out">
+              <span class="absolute transition-all duration-300 ease-in-out scale-0 -bottom-[10px] modal__language--name group-hover:scale-100"><b>React</b></span>
+            </figure>
+          </div>
+        </div>
+        <!-- BLACK MODAL CONTACT FORM -->
+        <div class="modal__half bg-[#242424] text-white w-2/4 py-[40px] px-[72px] flex flex-col justify-center relative">Let's have a chat!
+        
+        </div>
+       </div>
     </section>
     <!-- PROJECTS SECTION -->
      <section id="projects">
@@ -170,6 +207,7 @@
                 </div>
               </div>
             </li>
+            <!-- PROJECT #2 -->
             <li class="project mb-[135px]">
                <!-- PROJECT BACKGROUND -->
               <div class="relative project__wrapper overflow-hidden max-[480px]:flex max-[480px]:justify-center rounded-[20px] shadow-[0_20px_80px_0_rgba(0,0,0,0.45)] group">
@@ -183,15 +221,15 @@
                   <h3 class="project__description--title text-[40px]">
                     <b>Car Sales Projects</b>
                   </h3>
-                  <!-- PROJECT #1 TECH STACK -->
+                  <!-- PROJECT #2 TECH STACK -->
                   <h4 class="project__description--sub-title mt-[16px] max-[480px]:my-[8px] max-[480px]:mt-0">
                     <b>HTML, CSS, JavaScript, Vue, Vuex</b>
                   </h4>
-                  <!-- PROJECT #1 PARA -->
+                  <!-- PROJECT #2 PARA -->
                   <p class="project__description--para my-[16px] max-[480px]:hidden">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum saepe dicta molestias est culpa veniam consectetur magni at magnam totam.
                   </p>
-                  <!-- PROJECT #1 LINKS -->
+                  <!-- PROJECT #2 LINKS -->
                   <div class="flex max-[480px]:justify-center project__description--links">
                     <!-- GITHUB ICON LINK -->
                     <a
@@ -211,6 +249,7 @@
                 </div>
               </div>
             </li>
+            <!-- PROJECT #3 -->
             <li class="project mb-[135px]">
                <!-- PROJECT BACKGROUND -->
               <div class="relative project__wrapper overflow-hidden max-[480px]:flex max-[480px]:justify-center rounded-[20px] shadow-[0_20px_80px_0_rgba(0,0,0,0.45)] group">
@@ -224,15 +263,15 @@
                   <h3 class="project__description--title text-[40px]">
                     <b>Car Sales Projects</b>
                   </h3>
-                  <!-- PROJECT #1 TECH STACK -->
+                  <!-- PROJECT #3 TECH STACK -->
                   <h4 class="project__description--sub-title mt-[16px] max-[480px]:my-[8px] max-[480px]:mt-0">
                     <b>HTML, CSS, JavaScript, Vue, Vuex</b>
                   </h4>
-                  <!-- PROJECT #1 PARA -->
+                  <!-- PROJECT #3 PARA -->
                   <p class="project__description--para my-[16px] max-[480px]:hidden">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum saepe dicta molestias est culpa veniam consectetur magni at magnam totam.
                   </p>
-                  <!-- PROJECT #1 LINKS -->
+                  <!-- PROJECT #3 LINKS -->
                   <div class="flex max-[480px]:justify-center project__description--links">
                     <!-- GITHUB ICON LINK -->
                     <a
@@ -252,46 +291,45 @@
                 </div>
               </div>
             </li>
-
           </ul>          
         </div>
       </div>
      </section>
      <footer class="relative bg-[#242424] py-[6%] px-0">
-        <div class="container flex flex-col items-center w-full max-w-[1100px] px-[28px]">
-          <a href="" class="footer__anchor">
-            <figure class="footer__logo">
-              <img src="./assets/MK grayscale icon.svg" alt="MK footer logo"
-              class="hover:sepia [64px] h-[64px]"
-              >
-            </figure>
-            <!-- TODO BELOW -->
-            <span class="absolute right-0 footer__logo--popper top-[16px] transition-all duration-300 ease text-white">
-              " TOP "
-              <i class="fas fa-arrow-up"></i>
-            </span>
-          </a>
-          <div class="w-full footer__social--list max-w-[500px] flex justify-between my-[28px] ease-in-out relative">
-            <a href="#"
-            class="relative text-white no-underline hover:ease-in-out hover:before:scale-x-100 hover:before:origin-left before:w-full before:h-[3px] before:origin-right before:transition-transform hover:before:duration-[400ms] before:scale-x-0 before:bg-white before:absolute before:left-0 before:-bottom-[1px]">
-              GitHub
+        <div class="container w-full px-[50px] ">
+          <div class="flex flex-col items-center row max-w-[1100px] px-[28px] mx-auto my-0">
+            <a href="" class="footer__anchor">
+              <figure class="footer__logo">
+                <img src="./assets/MK grayscale icon.svg" alt="MK footer logo"
+                class="hover:sepia [64px] h-[64px]"
+                >
+              </figure>
+              <!-- TODO BELOW -->
+              <!-- <span class="absolute right-0 footer__logo--popper top-[16px] transition-all duration-300 ease text-white">
+                " TOP "
+                <i class="fas fa-arrow-up"></i>
+              </span> -->
             </a>
-            <a href="#"
-            class="relative text-white no-underline hover:ease-in-out hover:before:scale-x-100 hover:before:origin-left before:w-full before:h-[3px] before:origin-right before:transition-transform hover:before:duration-[400ms] before:scale-x-0 before:bg-white before:absolute before:left-0 before:-bottom-[1px]">
-              LinkedIn
-              <span class=""></span>
-            </a>
-            <a href="#"
-            class="relative text-white no-underline hover:ease-in-out hover:before:scale-x-100 hover:before:origin-left before:w-full before:h-[3px] before:origin-right before:transition-transform hover:before:duration-[400ms] before:scale-x-0 before:bg-white before:absolute before:left-0 before:-bottom-[1px]">
-              Resume
-              <span class=""></span>
-            </a>
-            <a href="#"
-            class="relative text-white no-underline hover:ease-in-out hover:before:scale-x-100 hover:before:origin-left before:w-full before:h-[3px] before:origin-right before:transition-transform hover:before:duration-[400ms] before:scale-x-0 before:bg-white before:absolute before:left-0 before:-bottom-[1px]">
-              Contact
-            </a>
+            <div class="w-full footer__social--list max-w-[500px] flex justify-between my-[28px] ease-in-out relative">
+              <a href="#"
+              class="relative text-white no-underline hover:ease-in-out hover:before:scale-x-100 hover:before:origin-left before:w-full before:h-[3px] before:origin-right before:transition-transform hover:before:duration-[400ms] before:scale-x-0 before:bg-white before:absolute before:left-0 before:-bottom-[1px]">
+                GitHub
+              </a>
+              <a href="#"
+              class="relative text-white no-underline hover:ease-in-out hover:before:scale-x-100 hover:before:origin-left before:w-full before:h-[3px] before:origin-right before:transition-transform hover:before:duration-[400ms] before:scale-x-0 before:bg-white before:absolute before:left-0 before:-bottom-[1px]">
+                LinkedIn
+              </a>
+              <a href="#"
+              class="relative text-white no-underline hover:ease-in-out hover:before:scale-x-100 hover:before:origin-left before:w-full before:h-[3px] before:origin-right before:transition-transform hover:before:duration-[400ms] before:scale-x-0 before:bg-white before:absolute before:left-0 before:-bottom-[1px]">
+                Resume
+              </a>
+              <a href="#"
+              class="relative text-white no-underline hover:ease-in-out hover:before:scale-x-100 hover:before:origin-left before:w-full before:h-[3px] before:origin-right before:transition-transform hover:before:duration-[400ms] before:scale-x-0 before:bg-white before:absolute before:left-0 before:-bottom-[1px]">
+                Contact
+              </a>
+            </div>
+            <div class="text-white footer__copyright">Copyright © 2024 Michael Kuhlmann</div>
           </div>
-          <div class="footer__copyright"></div>
         </div>
      </footer>
   </body>
