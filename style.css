@@ -15,6 +15,36 @@ html {
   margin: 0 auto;
 }
 
+textarea {
+  resize: vertical;
+  height: 100px;
+
+}
+
+input,
+textarea {
+  width: 100%;
+  background-color: #242424;
+  color: white;
+  outline: none;
+  border: 3px solid #c0c4cc;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  height: 40px;
+  transition: all 300ms ease;
+}
+
+input:hover,
+textarea:hover {
+  border-color: #dcdfe6;
+}
+
+input:focus,
+textarea:focus {
+  border-color: rgb(96 165 250);
+}
+
 /* Background color for whole web page */
 /* section { ADDED TAILWIND CSS
   background-color: rgb(245, 245, 245);

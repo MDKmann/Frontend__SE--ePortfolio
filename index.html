@@ -117,41 +117,80 @@
       <!-- SCROLL MOUSE ICON -->
       <a href="#projects" class="scroll flex justify-center items-center absolute bottom-[20px] left-2/4 -translate-x-2/4 w-[20px] h-[30px] border-2 border-[#242424] rounded-3xl hover:scale-[1.1] active:scale-[0.8] duration-300 ease-in-out"> <span class="w-[4px] h-[6px] bg-[#242424] border-3 rounded-full animate-[bounce_1s_infinite_alternate-reverse]"></span> </a>
       <!-- MODAL CONTACT PAGE -->
-       <div class="absolute modal top-2/4 left-2/4 w-[90%] max-w-[1100px] h-[700px] rounded-[20px] shadow-[0_20px_80px_0_rgba(0,0,0,0.55)] overflow-hidden -translate-x-2/4 -translate-y-2/4 flex">
+       <div class="absolute modal top-2/4 left-2/4 w-[90%] max-w-[1100px] h-[700px] rounded-[20px] shadow-[0_20px_80px_0_rgba(0,0,0,0.55)] overflow-hidden -translate-x-2/4 -translate-y-2/4 flex justify-center">
         <!-- WHHITE MODAL ABOUT PAGE -->
         <div class="w-2/4 modal__half bg-stone-100 py-[40px] px-[72px] flex flex-col justify-center relative">
-          <h3 class="modal__title--about">
+          <h3 class="modal__title--about text-[26px]">
             <b>Here's a bit about me.</b>
           </h3>
-          <h4 class="modal__sub-title--about">
+          <h4 class="modal__sub-title--about text-[14px] mb-[24px] mt-[12px] mx-0">
             <b>Frontend Software Engineer.</b>
           </h4>
-          <p class="modal__para--about">My name is <b class="text-blue-400">Michael</b> and I am an American  <b class="text-blue-400">frontend software engineer</b> with a compelling passion for developing websites with exceptional  <b class="text-blue-400">user experiences.</b>
+          <p class="leading-relaxed modal__para--about mb-[12px]">My name is <b class="text-blue-400">Michael</b> and I am an American  <b class="text-blue-400">frontend software engineer</b> with a compelling passion for developing websites with exceptional  <b class="text-blue-400">user experiences.</b>
           <br>
           Through my own self-drive, or the  <b class="text-blue-400">wisdom</b> and  <b class="text-blue-400">experience</b> of the talented team I work with, I am challenged daily with intimidating and complex engineering problems.
           </p>
           <div class="flex flex-wrap modal__languages">
             <figure class=" modal__HTML relative p-[16px] flex flex-col items-center w-1/4 group">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="HTML logo" class="modal__language--HTML group-hover:scale-[0.85] group-hover:brightness-75 duration-300 ease-in-out">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="HTML logo" class="modal__language--HTML group-hover:scale-[0.9] group-hover:brightness-[0.80] duration-300 ease-in-out">
               <span class="absolute transition-all duration-300 ease-in-out scale-0 -bottom-[10px] modal__language--name group-hover:scale-100"><b>HTML</b></span>
             </figure>
             <figure class="modal__CSS relative p-[16px] flex flex-col items-center w-1/4 group">
-              <img src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="CSS logo" class="modal__language--CSS group-hover:scale-[0.85] group-hover:brightness-75 duration-300 ease-in-out">
+              <img src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="CSS logo" class="modal__language--CSS group-hover:scale-[0.9] group-hover:brightness-[0.80] duration-300 ease-in-out">
               <span class="absolute transition-all duration-300 ease-in-out scale-0 -bottom-[10px] modal__language--name group-hover:scale-100"><b>CSS</b></span>
             </figure>
             <figure class="modal__JS relative p-[16px] flex flex-col items-center w-1/4 group">
-              <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="JavaScript logo" class="modal__language--JS group-hover:scale-[0.85] group-hover:brightness-75 duration-300 ease-in-out">
+              <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="JavaScript logo" class="modal__language--JS group-hover:scale-[0.9] group-hover:brightness-[0.80] duration-300 ease-in-out">
               <span class="absolute transition-all duration-300 ease-in-out scale-0 -bottom-[10px] modal__language--name group-hover:scale-100"><b>JavaScript</b></span>
             </figure>
             <figure class="modal__React relative p-[16px] flex flex-col items-center w-1/4 group">
-              <img src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt="React logo" class="modal__language--React group-hover:scale-[0.85] group-hover:brightness-75 duration-300 ease-in-out">
+              <img src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt="React logo" class="modal__language--React group-hover:scale-[0.9] group-hover:brightness-[0.80] duration-300 ease-in-out">
               <span class="absolute transition-all duration-300 ease-in-out scale-0 -bottom-[10px] modal__language--name group-hover:scale-100"><b>React</b></span>
             </figure>
           </div>
         </div>
         <!-- BLACK MODAL CONTACT FORM -->
-        <div class="modal__half bg-[#242424] text-white w-2/4 py-[40px] px-[72px] flex flex-col justify-center relative">Let's have a chat!
-        
+        <div class="modal__half bg-[#242424] text-white w-2/4 py-[40px] px-[72px] flex flex-col justify-center relative">
+          <h3 class="modal__title--contact text-[26px]"><b>Let's have a chat!</b></h3>
+          <h4 class="modal__sub-title--contact text-[14px] mb-[24px] mt-[12px] mx-0"><b>I'm currently open to new opportunities.</b></h4>
+          <form id="contact__form" action="" class="form__container--contact">
+            <div class="form__name mb-[20px]">
+              <label for="name" class="form__name--label text-[14px]"><b>Name</b></label>
+              <input type="text" name="user_name" class="form__name--input" required></input>
+            </div>
+            <div class="form__email mb-[20px]">
+              <label for="email" class="form__email--label text-[14px]"><b>Email</b></label>
+              <input type="text" name="user_email" class="form__email--input" required></input>
+            </div>
+            <div class="form__message mb-[20px]">
+              <label for="message" class="form__message--label text-[14px]"><b>Message</b></label>
+              <textarea type="text" name="message" class="form__message--input" required></textarea>
+            </div>
+            <button id="contact__submit" class="bg-blue-400 border-[2px] border-solid border-blue-400 w-full max-w-[240px] py-[12px] px-[24px] text-[20px] rounded-[10px] shadow-[0_20px_80px_0_rgba(245,245,244,0.15)] overflow-hidden hover:bg-transparent hover:border-white hover:ease-in-out hover:transition-all hover:duration-300 hover:scale-[0.98] active:outline active:outline-offset-2 active:outline-4 active:outline-blue-400 ease-in-out duration-300 form__submit">
+              <b>Send it my way!</b>
+            </button>
+          </form>
+          <!-- MODAL OVERLAY LOADING -->
+           <div class="absolute top-0 left-0 flex items-center justify-center w-full h-full bg-[#242424] modal__overlay modal__overlay--loading text-[80px] -z-10">
+              <i class="fas fa-spinner animate-[spin_750ms_linear_infinite]"></i>
+           </div>
+            <!-- MODAL OVERLAY SUCCESS -->
+           <div class="absolute top-0 left-0 flex flex-col items-center justify-center w-full h-full text-center text-white bg-green-400 modal__overlay modal__overlay--success">
+            <div class="mb-6 success__icon--container text-7xl">
+              <i class="fas fa-paper-plane"></i>
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <h3 class="modal__success--title text-[26px]"><b>Success!</b></h3>
+            <h4 class="modal__success--sub-title text-[14px] mb-[24px] mt-[12px] mx-0"">
+              <b>Thanks for the message. </b>
+            </h4>
+            <h4 class="modal__success--sub-title text-[16px] mb-[24px]">
+              Looking forward to speaking with you soon.
+            </h4>
+            <button id="contact__submit--close" class="bg-none border-[2px] border-solid text-light-50 border-light-50 w-full max-w-[240px] py-[12px] px-[16px] text-[20px] rounded-[10px] shadow-[0_20px_80px_0_rgba(245,245,244,0.15)] overflow-hidden hover:bg-transparent hover:border-white hover:text-white hover:ease-in-out hover:transition-all hover:duration-300 hover:scale-[0.98] hover:brightness-105 active:outline active:outline-offset-2 active:outline-4 active:outline-blue-400 ease-in-out duration-300 form__submit">
+                <b>Return</b>
+            </button>
+           </div>
         </div>
        </div>
     </section>
