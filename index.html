@@ -12,6 +12,16 @@
       src="https://kit.fontawesome.com/c8e4d183c2.js"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init({
+            publicKey: "4GMijwLQzs35iRqNm",
+          });
+      })();
+    </script>
   </head>
   <body class="bg-stone-100">
    <!-- HERO SECTION -->
@@ -126,9 +136,9 @@
           <h4 class="modal__sub-title--about text-[14px] mb-[24px] mt-[12px] mx-0">
             <b>Frontend Software Engineer.</b>
           </h4>
-          <p class="leading-relaxed modal__para--about mb-[12px]">My name is <b class="text-blue-400">Michael</b> and I am an American  <b class="text-blue-400">frontend software engineer</b> with a compelling passion for developing websites with exceptional  <b class="text-blue-400">user experiences.</b>
+          <p class="leading-[1.75] modal__para--about mb-[6px]">My name is <b class="text-blue-400">Michael</b> and I am an American  <b class="text-blue-400">frontend software engineer</b> with a compelling passion for developing websites with exceptional  <b class="text-blue-400">user experiences.</b>
           <br>
-          Through my own self-drive, or the  <b class="text-blue-400">wisdom</b> and  <b class="text-blue-400">experience</b> of the talented team I work with, I am challenged daily with intimidating and complex engineering problems.
+          Through a combonation of self-drive and the  <b class="text-blue-400">wisdom</b> and  <b class="text-blue-400">experience</b> of the talented team I work with, I am challenged daily with intimidating and complex engineering problems.
           </p>
           <div class="flex flex-wrap modal__languages">
             <figure class=" modal__HTML relative p-[16px] flex flex-col items-center w-1/4 group">
@@ -175,8 +185,8 @@
               <i class="fas fa-spinner animate-[spin_750ms_linear_infinite]"></i>
            </div>
             <!-- MODAL OVERLAY SUCCESS -->
-           <div class="absolute top-0 left-0 flex flex-col items-center justify-center w-full h-full text-center text-white bg-green-400 modal__overlay modal__overlay--success">
-            <div class="mb-6 success__icon--container text-7xl">
+           <div class="absolute top-0 left-0 flex flex-col items-center justify-center w-full h-full text-center text-white bg-green-400 modal__overlay modal__overlay--success -z-10">
+            <div class="mb-7 success__icon--container text-7xl">
               <i class="fas fa-paper-plane"></i>
               <i class="fas fa-check-circle"></i>
             </div>
@@ -184,14 +194,16 @@
             <h4 class="modal__success--sub-title text-[14px] mb-[24px] mt-[12px] mx-0"">
               <b>Thanks for the message. </b>
             </h4>
-            <h4 class="modal__success--sub-title text-[16px] mb-[24px]">
+            <h4 class="modal__success--sub-title text-[16px] mb-8">
               Looking forward to speaking with you soon.
             </h4>
-            <button id="contact__submit--close" class="bg-none border-[2px] border-solid text-light-50 border-light-50 w-full max-w-[240px] py-[12px] px-[16px] text-[20px] rounded-[10px] shadow-[0_20px_80px_0_rgba(245,245,244,0.15)] overflow-hidden hover:bg-transparent hover:border-white hover:text-white hover:ease-in-out hover:transition-all hover:duration-300 hover:scale-[0.98] hover:brightness-105 active:outline active:outline-offset-2 active:outline-4 active:outline-blue-400 ease-in-out duration-300 form__submit">
+            <button id="contact__submit--close" class="bg-none border-[2px] border-solid text-white border-light-50 w-full max-w-[240px] py-[12px] px-[16px] text-[20px] rounded-[10px] shadow-[0_20px_80px_0_rgba(245,245,244,0.15)] overflow-hidden hover:bg-transparent hover:border-white hover:text-white hover:ease-in-out hover:transition-all hover:duration-300 hover:scale-[0.98] hover:brightness-105 active:outline active:outline-offset-2 active:outline-4 active:outline-blue-400 ease-in-out duration-300 form__submit">
                 <b>Return</b>
             </button>
            </div>
         </div>
+        <!-- MODAL CLOSE -->
+         <i class="text-white fas fa-times text-[36px] absolute top-[30px] right-[40px] z-50 ease-in-out duration-300 hover:scale-110 hover:transition-all hover:duration-300 hover:ease-in-out active:scale-[0.80]"></i>
        </div>
     </section>
     <!-- PROJECTS SECTION -->
