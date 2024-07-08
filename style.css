@@ -10,9 +10,31 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+
+
 html {
   scroll-behavior: smooth;
   margin: 0 auto;
+}
+
+
+/*=============================================
+=            CHROME AUTOFILL                 =
+=============================================*/
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+  transition: background-color 5000s;
+  -webkit-text-fill-color: white !important;
+  caret-color: white;
+}
+
+
+input:autofill {
+  background-color: inherit;
 }
 
 textarea {
@@ -39,6 +61,7 @@ input:hover,
 textarea:hover {
   border-color: #dcdfe6;
 }
+
 
 input:focus,
 textarea:focus {
