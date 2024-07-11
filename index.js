@@ -2,6 +2,18 @@
 // service_952vprc
 // 4GMijwLQzs35iRqNm
 
+let isModalOpen = false;
+let isModeDark = false;
+
+function toggleContrast() {
+    if (isModeDark) {
+        isModeDark = false;
+        return documentElement.classList += " dark";
+    }
+    isModeDark = true;
+    return documentElement.classList.remove("dark");
+}
+
 function contact(event) {
     event.preventDefault();
     const loading = document.querySelector('#loading');
@@ -24,7 +36,6 @@ function contact(event) {
     })
 }
 
-let isModalOpen = false;
 function toggleModal() {
     if (isModalOpen) {
         isModalOpen = false;

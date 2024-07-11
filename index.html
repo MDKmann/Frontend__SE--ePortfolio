@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <!-- BROWSER TITLE ICON -->
@@ -24,7 +24,7 @@
       })();
     </script>
   </head>
-  <body class="bg-stone-100">
+  <body class="bg-stone-100 dark:bg-#242424">
    <!-- HERO SECTION -->
     <section id="hero" class="h-dvh">
       <!-- NAV SECTION -->
@@ -46,7 +46,7 @@
           <li class="mx-3 my-0">
             <a
               href="#"
-              class="invisible md:visible hover:text-blue-400 duration-300 ease-in-out no-underline text-[16px] text-[#242424] font-bold"
+              class=" relative invisible md:visible hover:text-blue-400 duration-300 ease-in-out no-underline text-[16px] text-[#242424] font-bold hover:ease-in-out hover:before:scale-x-100 hover:before:origin-left before:w-full before:h-[3px] before:origin-right before:transition-transform hover:before:duration-[400ms] before:scale-x-0 before:bg-blue-400 before:absolute before:left-0 before:-bottom-[2px]"
               >About</a
             >
           </li>
@@ -54,7 +54,7 @@
           <li class="my-0 mx-[12px]">
             <a
               href="#"
-              class="hover:text-blue-400 duration-300 ease-in-out no-underline text-[16px] text-[#242424] font-bold"
+              class=" relative hover:text-blue-400 duration-300 ease-in-out no-underline text-[16px] text-[#242424] font-bold hover:ease-in-out hover:before:scale-x-100 hover:before:origin-left before:w-full before:h-[3px] before:origin-right before:transition-transform hover:before:duration-[400ms] before:scale-x-0 before:bg-blue-400 before:absolute before:left-0 before:-bottom-[2px]"
               >Projects</a
             >
           </li>
@@ -62,12 +62,11 @@
           <li class="mx-[12px] my-0" onclick="toggleModal()">
             <a
               href="#"
-              class="hover:text-blue-400 duration-300 ease-in-out no-underline text-[16px] text-[#242424] font-bold"
-              >Contact</a
+              class=" relative hover:text-blue-400 duration-300 ease-in-out no-underline text-[16px] text-[#242424] font-bold hover:ease-in-out hover:before:scale-x-100 hover:before:origin-left before:w-full before:h-[3px] before:origin-right before:transition-transform hover:before:duration-[400ms] before:scale-x-0 before:bg-blue-400 before:absolute before:left-0 before:-bottom-[2px]"              >Contact</a
             >
           </li>
           <!-- LIGHT/DARK MODE TOGGLE -->
-          <li class="my-0 mx-[12px] hover:scale-[1.1] active:scale-[0.8] duration-300 ease-in-out">
+          <li class="my-0 mx-[12px] hover:scale-[1.1] active:scale-[0.8] duration-300 ease-in-out" onclick="toggleContrast()">
             <a
               href="#"
               class="no-underline text-base text-[#242424] font-bold"
@@ -88,7 +87,10 @@
             strong passion for building web applications with great user
             experiences.
             <br/>
-            Here's a bit more <b class="text-blue-400">about me.</b>
+            Here's a bit more
+            <a href="#" onclick="toggleModal()">
+              <b class="text-blue-400 duration-500 ease-in-out hover:text-[19px] hover:shadow-xl hover: hover:cursor-pointer"> about me. </b>
+            </a>
           </p>
           <!-- HERO ICON LINKS -->
           <ul class="flex my-4">
@@ -131,7 +133,7 @@
        <div class="absolute invisible -z-10 modal top-2/4 left-2/4 w-[90%] max-w-[1100px] h-[700px] rounded-[20px]  overflow-hidden -translate-x-2/4 -translate-y-2/4 flex justify-center">
         <!-- shadow-[0_20px_80px_0_rgba(0,0,0,0.55)] - [transition:visible_1s,_shadow_.5s,ease-in-out] -->
         <!-- WHHITE MODAL ABOUT PAGE -->
-        <div class="w-2/4 modal__half bg-stone-100 py-[40px] px-[72px] flex flex-col justify-center relative">
+        <div class="w-2/4 modal__half modal__white bg-stone-100 py-[40px] px-[72px] flex flex-col justify-center relative transition-all duration-300 ease-in -translate-x-[110%]">
           <h3 class="modal__title--about text-[26px]">
             <b>Here's a bit about me.</b>
           </h3>
@@ -163,7 +165,7 @@
           </div>
         </div>
         <!-- BLACK MODAL CONTACT FORM -->
-        <div class="modal__half bg-[#242424] text-white w-2/4 py-[40px] px-[72px] flex flex-col justify-center relative">
+        <div class="modal__half modal__black bg-[#242424] text-white w-2/4 py-[40px] px-[72px] flex flex-col justify-center relative transition-all duration-300 ease-in translate-x-[110%] z-70">
           <h3 class="modal__title--contact text-[26px]"><b>Let's have a chat!</b></h3>
           <h4 class="modal__sub-title--contact text-[14px] mb-[24px] mt-[12px] mx-0"><b>I'm currently open to new opportunities.</b></h4>
           <form id="contact__form" onsubmit="contact(event)" class="form__container--contact">
@@ -184,31 +186,31 @@
             </button>
           </form>
           <!-- MODAL OVERLAY LOADING -->
-           <div id="loading" class="absolute top-0 left-0 flex items-center justify-center w-full h-full bg-[#242424] modal__overlay modal__overlay--loading text-[80px] -z-10">
+           <!-- <div id="loading" class="absolute top-0 left-0 flex items-center justify-center w-full h-full bg-[#242424] modal__overlay modal__overlay--loading text-[80px] -z-10">
               <i class="fas fa-spinner animate-[spin_750ms_linear_infinite]"></i>
-           </div>
+           </div> -->
             <!-- MODAL OVERLAY SUCCESS -->
-           <div id="success" class="absolute px-[56px] top-0 left-0 flex flex-col items-center justify-center w-full h-full text-center text-white bg-[rgb(89,218,112)] modal__overlay modal__overlay--success -z-10">
-            <div class="mb-7 success__icon--container text-7xl">
-              <i class="fas fa-paper-plane"></i>
+           <!-- <div id="success" class="absolute px-[56px] top-0 left-0 flex flex-col items-center justify-center w-full h-full text-center text-white bg-[rgb(89,218,112)] modal__overlay modal__overlay--success -z-10"> -->
+            <!-- <div class="mb-7 success__icon--container text-7xl"> -->
+              <!-- <i class="fas fa-paper-plane"></i> -->
               <!-- <i class="fas fa-check-circle"></i> -->
-            </div>
-            <h3 class="modal__success--title text-[28px]"><b>Success!</b></h3>
+            <!-- </div> -->
+            <!-- <h3 class="modal__success--title text-[28px]"><b>Success!</b></h3> -->
             <!-- <h4 class="modal__success--sub-title text-[16px] mb-[24px] mt-[12px] mx-0"">
               <b>Thanks for the message. </b>
             </h4> -->
-            <h4 class="modal__success--sub-title text-[18px] mt-[16px] mb-8">
-              Thanks for the message.
+            <!-- <h4 class="modal__success--sub-title text-[18px] mt-[16px] mb-8"> -->
+              <!-- Thanks for the message. -->
               <!-- <br> -->
-              Looking forward to speaking with you soon.
-            </h4>
-            <button id="contact__submit--close" class="bg-none border-[2px] border-solid text-white border-light-50 w-full max-w-[240px] py-[12px] px-[16px] text-[20px] rounded-[10px] shadow-[0_20px_80px_0_rgba(245,245,244,0.15)] overflow-hidden hover:bg-transparent hover:border-white hover:text-white hover:ease-in-out hover:transition-all hover:duration-300 hover:scale-[0.98] hover:brightness-105 active:outline active:outline-offset-2 active:outline-4 active:outline-blue-400 ease-in-out duration-300 form__submit">
-                <b>Return</b>
-            </button>
-           </div>
+              <!-- Looking forward to speaking with you soon. -->
+            <!-- </h4> -->
+            <!-- <button id="contact__submit--close" class="bg-none border-[2px] border-solid text-white border-light-50 w-full max-w-[240px] py-[12px] px-[16px] text-[20px] rounded-[10px] shadow-[0_20px_80px_0_rgba(245,245,244,0.15)] overflow-hidden hover:bg-transparent hover:border-white hover:text-white hover:ease-in-out hover:transition-all hover:duration-300 hover:scale-[0.98] hover:brightness-105 active:outline active:outline-offset-2 active:outline-4 active:outline-blue-400 ease-in-out duration-300 form__submit" onclick="toggleModal()"> -->
+                <!-- <b>Return</b> -->
+            <!-- </button> -->
+           <!-- </div> -->
+           <!-- MODAL CLOSE -->
+         <i class="text-white fas fa-times text-[36px] absolute top-[30px] right-[40px] z-50 ease-in-out duration-300 hover:scale-110 hover:transition-all hover:duration-300 hover:ease-in-out active:scale-[0.80]" onclick="toggleModal()"></i>
         </div>
-        <!-- MODAL CLOSE -->
-         <i class="text-white fas fa-times text-[36px] absolute top-[30px] right-[40px] z-50 ease-in-out duration-300 hover:scale-110 hover:transition-all hover:duration-300 hover:ease-in-out active:scale-[0.80]"></i>
        </div>
     </section>
     <!-- PROJECTS SECTION -->
@@ -380,7 +382,7 @@
                 Resume
               </a>
               <a href="#"
-              class="relative text-white no-underline hover:ease-in-out hover:before:scale-x-100 hover:before:origin-left before:w-full before:h-[3px] before:origin-right before:transition-transform hover:before:duration-[400ms] before:scale-x-0 before:bg-white before:absolute before:left-0 before:-bottom-[1px]">
+              class="relative text-white no-underline hover:ease-in-out hover:before:scale-x-100 hover:before:origin-left before:w-full before:h-[3px] before:origin-right before:transition-transform hover:before:duration-[400ms] before:scale-x-0 before:bg-white before:absolute before:left-0 before:-bottom-[1px]" onclick="toggleModal()">
                 Contact
               </a>
             </div>
