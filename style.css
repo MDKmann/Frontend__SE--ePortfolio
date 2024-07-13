@@ -32,6 +32,49 @@ nav,
   transition: all 400ms 200ms;
 }
 
+.dark nav,
+.dark .nav__menu,
+.dark #hero,
+.dark #projects {
+  color:rgb(245, 245, 244);
+  background-color:#242424;
+}
+.dark footer,
+.dark .footer__links,
+.dark .dark__invert--BGcolor {
+  color:#242424;
+  background-color:rgb(245, 245, 244);
+}
+
+.dark .footer__links::before {
+  background-color: #242424;
+}
+
+.dark .dark__invert--color{
+ color: rgb(245, 245, 244);
+}
+.dark .dark__invert--mail{
+ color: #242424;
+}
+
+.dark .dark__shadow {
+  box-shadow: 0 12px 30px 0 rgba(245,245,244,0.28);
+}
+.dark nav,
+.dark .nav__menu,
+.dark #hero,
+.dark #projects,
+.dark footer,
+.dark .footer__links,
+.dark .dark__invert--BGcolor
+.dark .dark__shadow,
+.dark .footer__links::before,
+.dark .dark__invert--color,
+.dark .dark__invert--mail {
+  transition: all 300ms ease-in-out!;
+}
+
+
 
 /*=============================================
 =            CHROME AUTOFILL                 =
