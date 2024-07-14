@@ -1,3 +1,7 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
 /*=============================================
 =   START SIDE WIDE DEFAULT FORMATTING    =
 =============================================*/
@@ -275,4 +279,72 @@ li {
 
 .modal--open .modal__half {
   transform: translateX(0%);
+}
+
+
+/*=============================================
+=            BACKGROUND SHAPES SECTION        =
+=============================================*/
+
+/*
+
+ROWS
+Shapes on the   row
+top =  35vh
+
+Shapes on the   row
+top = 70vh
+
+Shapes on the   row
+top = 95vh
+
+COLUMNS
+Shapes on the   column
+left =  5vw
+
+Shapes on the   column
+left =  50vw
+
+Shapes on the   column
+left =  80vw
+
+.shape {
+ position: fixed;
+}
+
+.shape--0 {
+  top: 35vh;
+  left: 5vw;
+}
+.shape--1 {
+  top: 35vh;
+  left: 50vw;
+}
+.shape--2 {
+  top: 35vh;
+  left: 80vw;
+}
+.shape--3 {
+  top: 70vh;
+  left: 5vw;
+}
+.shape--4 {
+  top: 70vh;
+  left: 50vw;
+}
+.shape--5 {
+  top: 70vh;
+  left: 80vw;
+}
+.shape--6 {
+  top: 95vh;
+  left: 5vw;
+}
+.shape--7 {
+  top: 95vh;
+  left: 50vw;
+}
+.shape--8 {
+  top: 95vh;
+  left: 80vw;
 }
