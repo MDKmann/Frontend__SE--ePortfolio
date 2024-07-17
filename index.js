@@ -2,8 +2,8 @@
 // service_952vprc
 // 4GMijwLQzs35iRqNm
 
-let isModalOpen = false;
-let isModeDark = false;
+// let isModalOpen = false;
+// let isModeDark = false;
 const scaleFactor = 1 / 20;
 
 function moveBackground(event) {
@@ -19,13 +19,18 @@ function moveBackground(event) {
 }
 
 function toggleContrast() {
-    if (isModeDark) {
-        isModeDark = false;
-        return document.documentElement.classList += " dark";
-    }
-    isModeDark = true;
-    return document.documentElement.classList.remove("dark");
+    document.documentElement.classList.toggle("dark");
 }
+
+
+// function toggleContrast() {
+//     if (isModeDark) {
+//         isModeDark = false;
+//         return document.documentElement.classList += " dark";
+//     }
+//     isModeDark = true;
+//     return document.documentElement.classList.remove("dark");
+// }
 
 function contact(event) {
     event.preventDefault();
