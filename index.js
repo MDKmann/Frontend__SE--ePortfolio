@@ -2,7 +2,7 @@
 // service_952vprc
 // 4GMijwLQzs35iRqNm
 
-// let isModalOpen = false;
+let isModalOpen = false;
 // let isModeDark = false;
 const scaleFactor = 1 / 20;
 
