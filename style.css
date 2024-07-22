@@ -35,6 +35,33 @@ nav,
   visibility: hidden;
   transition: all 400ms 200ms;
 }
+
+/* @keyframes spin {
+  to {
+    transform: rotate3d(2turn);
+  }
+}
+ */
+
+ /* @keyframes spin {
+  to  {
+    transform: rotateX(3turn) rotateY(6turn) translate(150px, -75px) scale(1.5); 
+  }
+}
+
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: scroll()) {
+    .shape {
+      animation: spin linear both;
+      animation-timeline: scroll();
+    } 
+  }
+} */
+
+
 /* 
 .dark nav,
 .dark .nav__menu,
