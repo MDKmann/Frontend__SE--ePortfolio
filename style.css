@@ -36,33 +36,42 @@ nav,
   transition: all 400ms 200ms;
 }
 
-/* @keyframes spin {
-  to {
-    transform: rotate3d(2turn);
-  }
-}
- */
 
- /* @keyframes spin {
-  to  {
-    transform: rotateX(3turn) rotateY(6turn) translate(150px, -75px) scale(1.5); 
+  @keyframes fall {
+  50%  {
+    transform: rotateX(1turn) rotateY(3turn) translate(20px, -25px) scale(1.5); 
   }
 }
 
-
-
+@keyframes spinner {
+  50%  {
+  transform: rotateX(2turn) rotateY(1turn) translate(10px, -15px) scale(1.75); 
+}
+}
+@keyframes twister {
+  50%  {
+  transform: rotateX(3turn) rotateY(1turn) translate(75px, -35px); 
+}
+}
 
 @media (prefers-reduced-motion: no-preference) {
   @supports (animation-timeline: scroll()) {
-    .shape {
-      animation: spin linear both;
+    .fall {
+      animation: fall linear both;
+      animation-timeline: scroll();
+    } 
+    .spinner {
+      animation: spinner linear both;
+      animation-timeline: scroll();
+    } 
+    .twister {
+      animation: twister linear both;
       animation-timeline: scroll();
     } 
   }
-} */
+}
 
 
-/* 
 .dark nav,
 .dark .nav__menu,
 .dark #hero,
