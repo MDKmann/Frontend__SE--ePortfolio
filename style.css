@@ -139,7 +139,7 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus, 
 input:-webkit-autofill:active  {
-  transition: background-color 5000s;
+  transition: background-color 500s;
   -webkit-text-fill-color: white !important;
   caret-color: white;
   transition: all;
